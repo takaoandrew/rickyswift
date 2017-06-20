@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF8ABB191EF9504E007AA085 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8ABB171EF9504E007AA085 /* Main.storyboard */; };
+		BF8ABB1B1EF9504E007AA085 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8ABB1A1EF9504E007AA085 /* Assets.xcassets */; };
+		BF8ABB1E1EF9504E007AA085 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8ABB1C1EF9504E007AA085 /* LaunchScreen.storyboard */; };
+		BF8ABB261EF95736007AA085 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8ABB251EF95736007AA085 /* LoginViewController.swift */; };
+		BF8ABB281EF96722007AA085 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8ABB271EF96722007AA085 /* SignUpViewController.swift */; };
+		BF8ABB2A1EF9722C007AA085 /* CalendarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8ABB291EF9722C007AA085 /* CalendarTableViewController.swift */; };
+		BF8ABB2D1EF97DDC007AA085 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8ABB2B1EF97DDC007AA085 /* AppDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BF8ABB101EF9504D007AA085 /* RolodexSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RolodexSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF8ABB181EF9504E007AA085 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF8ABB1A1EF9504E007AA085 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF8ABB1D1EF9504E007AA085 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF8ABB251EF95736007AA085 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BF8ABB271EF96722007AA085 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		BF8ABB291EF9722C007AA085 /* CalendarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarTableViewController.swift; sourceTree = "<group>"; };
+		BF8ABB2B1EF97DDC007AA085 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF8ABB0D1EF9504D007AA085 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF8ABB071EF9504C007AA085 = {
+			isa = PBXGroup;
+			children = (
+				BF8ABB121EF9504D007AA085 /* RolodexSwift */,
+				BF8ABB111EF9504D007AA085 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF8ABB111EF9504D007AA085 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF8ABB101EF9504D007AA085 /* RolodexSwift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF8ABB121EF9504D007AA085 /* RolodexSwift */ = {
+			isa = PBXGroup;
+			children = (
+				BF8ABB2B1EF97DDC007AA085 /* AppDelegate.swift */,
+				BF8ABB1A1EF9504E007AA085 /* Assets.xcassets */,
+				BF8ABB171EF9504E007AA085 /* Main.storyboard */,
+				BF8ABB1C1EF9504E007AA085 /* LaunchScreen.storyboard */,
+				BF8ABB251EF95736007AA085 /* LoginViewController.swift */,
+				BF8ABB271EF96722007AA085 /* SignUpViewController.swift */,
+				BF8ABB291EF9722C007AA085 /* CalendarTableViewController.swift */,
+			);
+			name = RolodexSwift;
+			path = /Users/andrewtakao/Desktop/Coding/RolodexSwift/RolodexSwift;
+			sourceTree = "<absolute>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF8ABB0F1EF9504D007AA085 /* RolodexSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF8ABB221EF9504E007AA085 /* Build configuration list for PBXNativeTarget "RolodexSwift" */;
+			buildPhases = (
+				BF8ABB0C1EF9504D007AA085 /* Sources */,
+				BF8ABB0D1EF9504D007AA085 /* Frameworks */,
+				BF8ABB0E1EF9504D007AA085 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RolodexSwift;
+			productName = MinnoSwift;
+			productReference = BF8ABB101EF9504D007AA085 /* RolodexSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF8ABB081EF9504D007AA085 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Andrew Takao";
+				TargetAttributes = {
+					BF8ABB0F1EF9504D007AA085 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BF8ABB0B1EF9504D007AA085 /* Build configuration list for PBXProject "RolodexSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF8ABB071EF9504C007AA085;
+			productRefGroup = BF8ABB111EF9504D007AA085 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF8ABB0F1EF9504D007AA085 /* RolodexSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF8ABB0E1EF9504D007AA085 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF8ABB1E1EF9504E007AA085 /* LaunchScreen.storyboard in Resources */,
+				BF8ABB1B1EF9504E007AA085 /* Assets.xcassets in Resources */,
+				BF8ABB191EF9504E007AA085 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF8ABB0C1EF9504D007AA085 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF8ABB2D1EF97DDC007AA085 /* AppDelegate.swift in Sources */,
+				BF8ABB281EF96722007AA085 /* SignUpViewController.swift in Sources */,
+				BF8ABB261EF95736007AA085 /* LoginViewController.swift in Sources */,
+				BF8ABB2A1EF9722C007AA085 /* CalendarTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BF8ABB171EF9504E007AA085 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF8ABB181EF9504E007AA085 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF8ABB1C1EF9504E007AA085 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF8ABB1D1EF9504E007AA085 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF8ABB201EF9504E007AA085 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BF8ABB211EF9504E007AA085 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF8ABB231EF9504E007AA085 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RolodexSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.takaoandrew.RolodexSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BF8ABB241EF9504E007AA085 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RolodexSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.takaoandrew.RolodexSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF8ABB0B1EF9504D007AA085 /* Build configuration list for PBXProject "RolodexSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF8ABB201EF9504E007AA085 /* Debug */,
+				BF8ABB211EF9504E007AA085 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF8ABB221EF9504E007AA085 /* Build configuration list for PBXNativeTarget "RolodexSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF8ABB231EF9504E007AA085 /* Debug */,
+				BF8ABB241EF9504E007AA085 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF8ABB081EF9504D007AA085 /* Project object */;
+}
