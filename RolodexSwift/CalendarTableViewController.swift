@@ -12,6 +12,12 @@ class CalendarTableViewController: UITableViewController {
     
     var timesOfDay: [String]?
     
+//    required init?(coder aDecoder: NSCoder) {
+//        super.init(coder: aDecoder)
+//        
+////        tabBarItem = UITabBarItem(title: "Calendar", image: UIImage(named: "calendar"), tag: 0)
+//    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         timesOfDay = ["1 AM", "2 AM", "3 AM", "4 AM", "5 AM", "6 AM",

@@ -14,6 +14,10 @@
 		BF8ABB281EF96722007AA085 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8ABB271EF96722007AA085 /* SignUpViewController.swift */; };
 		BF8ABB2A1EF9722C007AA085 /* CalendarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8ABB291EF9722C007AA085 /* CalendarTableViewController.swift */; };
 		BF8ABB2D1EF97DDC007AA085 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8ABB2B1EF97DDC007AA085 /* AppDelegate.swift */; };
+		BF8ABB7B1F01C5E7007AA085 /* ConnectionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8ABB7A1F01C5E6007AA085 /* ConnectionsTableViewController.swift */; };
+		BF8ABB7D1F01C814007AA085 /* RolodexConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8ABB7C1F01C814007AA085 /* RolodexConnectViewController.swift */; };
+		BF8ABB7F1F01DB2C007AA085 /* OpportunitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8ABB7E1F01DB2C007AA085 /* OpportunitiesViewController.swift */; };
+		BF8ABB811F01DB44007AA085 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8ABB801F01DB44007AA085 /* PlacesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,10 @@
 		BF8ABB271EF96722007AA085 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		BF8ABB291EF9722C007AA085 /* CalendarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarTableViewController.swift; sourceTree = "<group>"; };
 		BF8ABB2B1EF97DDC007AA085 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF8ABB7A1F01C5E6007AA085 /* ConnectionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionsTableViewController.swift; sourceTree = "<group>"; };
+		BF8ABB7C1F01C814007AA085 /* RolodexConnectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RolodexConnectViewController.swift; sourceTree = "<group>"; };
+		BF8ABB7E1F01DB2C007AA085 /* OpportunitiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpportunitiesViewController.swift; sourceTree = "<group>"; };
+		BF8ABB801F01DB44007AA085 /* PlacesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +72,10 @@
 				BF8ABB251EF95736007AA085 /* LoginViewController.swift */,
 				BF8ABB271EF96722007AA085 /* SignUpViewController.swift */,
 				BF8ABB291EF9722C007AA085 /* CalendarTableViewController.swift */,
+				BF8ABB7A1F01C5E6007AA085 /* ConnectionsTableViewController.swift */,
+				BF8ABB7C1F01C814007AA085 /* RolodexConnectViewController.swift */,
+				BF8ABB7E1F01DB2C007AA085 /* OpportunitiesViewController.swift */,
+				BF8ABB801F01DB44007AA085 /* PlacesViewController.swift */,
 			);
 			name = RolodexSwift;
 			path = /Users/andrewtakao/Desktop/Coding/RolodexSwift/RolodexSwift;
@@ -101,6 +113,7 @@
 				TargetAttributes = {
 					BF8ABB0F1EF9504D007AA085 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = L655688FN5;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -141,10 +154,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF8ABB7F1F01DB2C007AA085 /* OpportunitiesViewController.swift in Sources */,
 				BF8ABB2D1EF97DDC007AA085 /* AppDelegate.swift in Sources */,
 				BF8ABB281EF96722007AA085 /* SignUpViewController.swift in Sources */,
+				BF8ABB7B1F01C5E7007AA085 /* ConnectionsTableViewController.swift in Sources */,
+				BF8ABB811F01DB44007AA085 /* PlacesViewController.swift in Sources */,
 				BF8ABB261EF95736007AA085 /* LoginViewController.swift in Sources */,
 				BF8ABB2A1EF9722C007AA085 /* CalendarTableViewController.swift in Sources */,
+				BF8ABB7D1F01C814007AA085 /* RolodexConnectViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +282,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L655688FN5;
 				INFOPLIST_FILE = RolodexSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.takaoandrew.RolodexSwift;
@@ -277,6 +295,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L655688FN5;
 				INFOPLIST_FILE = RolodexSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.takaoandrew.RolodexSwift;

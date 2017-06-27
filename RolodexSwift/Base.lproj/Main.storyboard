@@ -28,7 +28,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RolodexIconTest" translatesAutoresizingMaskIntoConstraints="NO" id="QwW-Ps-8jN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rolodexbig" translatesAutoresizingMaskIntoConstraints="NO" id="QwW-Ps-8jN">
                                 <rect key="frame" x="113" y="105" width="149" height="148"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -45,7 +45,7 @@
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="loginPressed:" destination="LHP-On-boq" eventType="touchUpInside" id="kln-My-jWi"/>
-                                    <segue destination="MRK-oo-4zl" kind="show" id="Fta-3G-qZ7"/>
+                                    <segue destination="wvK-go-xkI" kind="show" id="zSb-eZ-gpx"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LOGIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emu-yZ-RMj">
@@ -75,6 +75,27 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qtt-W2-dAw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="922" y="56"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="YaI-jn-JEm">
+            <objects>
+                <tabBarController id="wvK-go-xkI" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="XdM-wW-lSl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="MRK-oo-4zl" kind="relationship" relationship="viewControllers" id="hWR-mf-psQ"/>
+                        <segue destination="SAG-OY-KQT" kind="relationship" relationship="viewControllers" id="EyI-fD-qxD"/>
+                        <segue destination="D3L-FY-Pbh" kind="relationship" relationship="viewControllers" id="m4V-Dp-Up6"/>
+                        <segue destination="MWo-7g-AGH" kind="relationship" relationship="viewControllers" id="85c-UG-2IH"/>
+                        <segue destination="8sF-Oy-Qlv" kind="relationship" relationship="viewControllers" id="Ttb-YV-Xnn"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="91v-Gn-GoM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1534" y="788"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="cqz-eo-KBc">
@@ -179,6 +200,9 @@
                                         <rect key="frame" x="22" y="578" width="330" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Continue"/>
+                                        <connections>
+                                            <segue destination="wvK-go-xkI" kind="show" id="x7L-Nt-P8f"/>
+                                        </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="ggO-GI-IEp">
                                         <rect key="frame" x="157" y="75" width="60" height="56"/>
@@ -194,7 +218,7 @@
             </objects>
             <point key="canvasLocation" x="1748" y="53.523238380809602"/>
         </scene>
-        <!--Calendar Table View Controller-->
+        <!--Calendar-->
         <scene sceneID="ZxF-yR-4FV">
             <objects>
                 <tableViewController id="MRK-oo-4zl" customClass="CalendarTableViewController" customModule="RolodexSwift" customModuleProvider="target" sceneMemberID="viewController">
@@ -217,10 +241,97 @@
                             <outlet property="delegate" destination="MRK-oo-4zl" id="Q7U-Ln-OSX"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Calendar" image="calendar2" selectedImage="calendar2" id="jLN-fa-MMa"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o18-6T-XAy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2487.1999999999998" y="53.523238380809602"/>
+            <point key="canvasLocation" x="2567" y="789"/>
+        </scene>
+        <!--Connections-->
+        <scene sceneID="cy4-Xp-fCv">
+            <objects>
+                <tableViewController id="SAG-OY-KQT" customClass="ConnectionsTableViewController" customModule="RolodexSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="qQk-Ez-cNp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ConnectionCell" id="PvW-pY-zpS">
+                                <rect key="frame" x="0.0" y="56" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PvW-pY-zpS" id="jXM-jR-10Z">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="SAG-OY-KQT" id="AXX-TZ-2ig"/>
+                            <outlet property="delegate" destination="SAG-OY-KQT" id="C57-Wb-h4r"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Connections" image="connections2" selectedImage="connections2" id="QF4-Fv-wKk"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Awx-L8-QbO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2566" y="1546"/>
+        </scene>
+        <!--Rolodex-->
+        <scene sceneID="bBi-Ht-UTI">
+            <objects>
+                <viewController id="D3L-FY-Pbh" customClass="RolodexConnectViewController" customModule="RolodexSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TI4-4g-P8R"/>
+                        <viewControllerLayoutGuide type="bottom" id="gw4-0X-GUo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xGv-GV-UeB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.27066660729298864" green="0.13989879100159686" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Rolodex" image="rolodex" selectedImage="rolodex" id="bva-mq-nfA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="frc-LT-zTV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2562" y="2224"/>
+        </scene>
+        <!--Opportunities-->
+        <scene sceneID="0pn-Vp-brd">
+            <objects>
+                <viewController id="MWo-7g-AGH" customClass="OpportunitiesViewController" customModule="RolodexSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D5Y-Xb-ZGp"/>
+                        <viewControllerLayoutGuide type="bottom" id="GLu-rP-m6S"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RfE-vw-x3c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Opportunities" image="opportunities" selectedImage="opportunities" id="eUo-kw-gJ9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qca-xN-VCl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2568" y="2898"/>
+        </scene>
+        <!--Places-->
+        <scene sceneID="nAM-fV-It0">
+            <objects>
+                <viewController id="8sF-Oy-Qlv" customClass="PlacesViewController" customModule="RolodexSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="67l-ff-gDr"/>
+                        <viewControllerLayoutGuide type="bottom" id="69b-Mz-vja"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="w3d-0M-lHp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Places" image="places" selectedImage="places" id="usn-ez-mvf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UGZ-L1-fOy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2561" y="3582"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bmp-zI-NZc">
@@ -242,12 +353,20 @@
         </scene>
     </scenes>
     <resources>
-        <image name="RolodexIconTest" width="149" height="148"/>
         <image name="avatar" width="512" height="512"/>
+        <image name="calendar2" width="30" height="30"/>
+        <image name="connections2" width="30" height="30"/>
         <image name="facebook" width="1097" height="1097"/>
         <image name="instagram3" width="600" height="600"/>
         <image name="linkedin" width="225" height="225"/>
+        <image name="opportunities" width="30" height="30"/>
+        <image name="places" width="30" height="30"/>
+        <image name="rolodex" width="30" height="30"/>
+        <image name="rolodexbig" width="149" height="148"/>
         <image name="snapchat" width="200" height="200"/>
         <image name="youtube" width="300" height="300"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="x7L-Nt-P8f"/>
+    </inferredMetricsTieBreakers>
 </document>
