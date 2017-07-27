@@ -16,16 +16,24 @@ extension ConnectionsTableViewController: UISearchResultsUpdating {
     
 }
 
+extension ConnectionsTableViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
+        filterContentForSearchText(searchText: searchBar.text!, scope: searchBar.scopeButtonTitles![selectedScope])
+    }
+}
+
 class ConnectionsTableViewController: UITableViewController {
     
     let searchController = UISearchController(searchResultsController: nil)
-    var connections = [String]()
+    var connections = [Connection]()
     
-    var filteredConnections = [String]()
+    var filteredConnections = [Connection]()
     
     func filterContentForSearchText(searchText: String, scope: String = "All") {
         filteredConnections = connections.filter { connection in
-            return connection.lowercased().contains(searchText.lowercased())
+            let groupMatch = (scope == "All") || (connection.group == scope)
+            return  groupMatch && connection.name.lowercased().contains(searchText.lowercased()) ||
+                connection.group.lowercased().contains(searchText.lowercased())
         }
         
         tableView.reloadData()
@@ -33,7 +41,13 @@ class ConnectionsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        connections = ["Johnny", "Jimmy", "Peter", "Susan"]
+        connections = [
+            Connection(name:"Ricky Schaberg", group:"Promoter"),
+            Connection(name:"Andrew Takao", group:"Coder"),
+            Connection(name:"Timothy Takao", group:"Salesman"),
+            Connection(name:"Matthew Takao", group:"Engineer"),
+            Connection(name:"Jackie Chan", group:"Actor")
+        ]
         searchController.searchResultsUpdater = self as? UISearchResultsUpdating
         searchController.dimsBackgroundDuringPresentation = false
         definesPresentationContext = true
@@ -54,14 +68,15 @@ class ConnectionsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ConnectionCell", for: indexPath)
-        let connection: String
+        let connection: Connection
         if searchController.isActive && searchController.searchBar.text != "" {
             connection = filteredConnections[indexPath.row]
         }
         else {
             connection = connections[indexPath.row]
         }
-        cell.textLabel!.text = connection
+        cell.textLabel!.text = connection.name
+        cell.detailTextLabel?.text = connection.group
         
         return cell
     }

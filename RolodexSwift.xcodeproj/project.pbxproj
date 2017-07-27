@@ -18,6 +18,7 @@
 		BF8ABB7D1F01C814007AA085 /* RolodexConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8ABB7C1F01C814007AA085 /* RolodexConnectViewController.swift */; };
 		BF8ABB7F1F01DB2C007AA085 /* OpportunitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8ABB7E1F01DB2C007AA085 /* OpportunitiesViewController.swift */; };
 		BF8ABB811F01DB44007AA085 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8ABB801F01DB44007AA085 /* PlacesViewController.swift */; };
+		BFECF83B1F2A9A3B001204AC /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFECF83A1F2A9A3B001204AC /* Connection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		BF8ABB7C1F01C814007AA085 /* RolodexConnectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RolodexConnectViewController.swift; sourceTree = "<group>"; };
 		BF8ABB7E1F01DB2C007AA085 /* OpportunitiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpportunitiesViewController.swift; sourceTree = "<group>"; };
 		BF8ABB801F01DB44007AA085 /* PlacesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
+		BFECF83A1F2A9A3B001204AC /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				BF8ABB7C1F01C814007AA085 /* RolodexConnectViewController.swift */,
 				BF8ABB7E1F01DB2C007AA085 /* OpportunitiesViewController.swift */,
 				BF8ABB801F01DB44007AA085 /* PlacesViewController.swift */,
+				BFECF83A1F2A9A3B001204AC /* Connection.swift */,
 			);
 			name = RolodexSwift;
 			path = /Users/andrewtakao/Desktop/Coding/RolodexSwift/RolodexSwift;
@@ -155,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF8ABB7F1F01DB2C007AA085 /* OpportunitiesViewController.swift in Sources */,
+				BFECF83B1F2A9A3B001204AC /* Connection.swift in Sources */,
 				BF8ABB2D1EF97DDC007AA085 /* AppDelegate.swift in Sources */,
 				BF8ABB281EF96722007AA085 /* SignUpViewController.swift in Sources */,
 				BF8ABB7B1F01C5E7007AA085 /* ConnectionsTableViewController.swift in Sources */,
