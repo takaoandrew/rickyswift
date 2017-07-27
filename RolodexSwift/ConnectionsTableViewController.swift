@@ -8,34 +8,61 @@
 
 import UIKit
 
-class ConnectionsTableViewController: UITableViewController {
 
-//    required init?(coder aDecoder: NSCoder) {
-//        super.init(coder: aDecoder)
-//        
-////        tabBarItem = UITabBarItem(title: "Connections", image: UIImage(named: "connections"), tag: 1)
-//    }
+extension ConnectionsTableViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        filterContentForSearchText(searchText: searchController.searchBar.text!)
+    }
     
-    var connections: [String]?
+}
+
+class ConnectionsTableViewController: UITableViewController {
+    
+    let searchController = UISearchController(searchResultsController: nil)
+    var connections = [String]()
+    
+    var filteredConnections = [String]()
+    
+    func filterContentForSearchText(searchText: String, scope: String = "All") {
+        filteredConnections = connections.filter { connection in
+            return connection.lowercased().contains(searchText.lowercased())
+        }
+        
+        tableView.reloadData()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         connections = ["Johnny", "Jimmy", "Peter", "Susan"]
+        searchController.searchResultsUpdater = self as? UISearchResultsUpdating
+        searchController.dimsBackgroundDuringPresentation = false
+        definesPresentationContext = true
+        tableView.tableHeaderView = searchController.searchBar
+        
     }
     
+
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let connections = connections {
+        if searchController.isActive && searchController.searchBar.text != "" {
+            return filteredConnections.count
+        }
+        else {
             return connections.count
         }
-        return 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let connection = connections?[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "ConnectionCell", for: indexPath)
-        if let connection = connection {
-            cell.textLabel?.text = connection
+        let connection: String
+        if searchController.isActive && searchController.searchBar.text != "" {
+            connection = filteredConnections[indexPath.row]
         }
+        else {
+            connection = connections[indexPath.row]
+        }
+        cell.textLabel!.text = connection
+        
         return cell
     }
 
